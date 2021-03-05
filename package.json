@@ -11,10 +11,11 @@
     "clean": "concurrently \"cd api && rm -rf node_modules/\" \"cd client && rm -rf node_modules/\" && rm -rf node_modules",
     "api:dev": "cd api && yarn watch",
     "client:dev": "cd client && yarn start",
-    "client:build": "cd client && yarn build",
+    "client:build": "cd client && yarn react-scripts-build",
     "dev": "concurrently \"yarn api:dev\" \"yarn client:dev\""
   },
   "devDependencies": {
-    "concurrently": "^6.0.0"
+    "concurrently": "^6.0.0",
+    "react-scripts": "4.0.0",
   }
 }
